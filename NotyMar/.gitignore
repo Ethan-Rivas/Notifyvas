@@ -17,6 +17,7 @@
 /tmp
 
 # Ignore personal configuration files
+../
 /test
 /config/database.yml
 /config/secrets.yml
