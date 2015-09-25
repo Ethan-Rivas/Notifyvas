@@ -1,4 +1,63 @@
-<h1>Index Page</h1>
-<p>Welcome to the Index Page</p>
+<div class="navigation">
+  <div class="container">
+    <ul class="squirrel-bar">
+      <li>Home</li>
+      <li>Squirrels</li>
+      <li>About This</li>
+      <div class="squirrel-bar-right">
+        <% if squirrel_signed_in? %>
+          <li><%= link_to "View Squirrel", current_squirrel, class: "links" %></li>
+          <li><%= link_to('Logout', destroy_squirrel_session_path, :method => :delete, class: "links") %></li>
+        <% else %>
+          <li><%= link_to('Login', new_squirrel_session_path, class: "links")  %></li>
+        <% end %>
+      </div>
+    </ul>
+  </div>
+</div>
 
-<%= link_to "View your Squirrel", current_squirrel %>
+<div class="container web">
+  <div class="row">
+    <%= image_tag("head.png", :alt => "Squirrel Header", class: "divider") %>
+    <div class="header col-md-12">
+      <div class="main-head">
+        <h1>Notymar for Squirrels</h1>
+        <p class="test">"Welcome to the Next Gen Squirrels"</p>
+      </div>
+    </div>
+  </div>
+  <div class="body-tutorial">
+    <div class="col-md-4">
+      <ul class="squirrel-specs">
+        <%= image_tag("specs.png", :alt => "Squirrel Header", class: "img-rounded squirrel-front-info") %>
+        <li class="specs-title">Current Specs</li>
+        <li><span class="glyphicon glyphicon-ok"></span> A Squirrel can Register</li>
+        <li><span class="glyphicon glyphicon-ok"></span> The Squirrel can edit his information</li
+        <li><span class="glyphicon glyphicon-ok"></span> The Squirrel has his own Profile</li>
+        <li><span class="glyphicon glyphicon-ok"></span> List of all the Squirrels</li>
+      </ul>
+    </div>
+    <div class=" col-md-4">
+      <ul class="squirrel-specs">
+        <%= image_tag("used.png", :alt => "Squirrel Header", class: "img-rounded squirrel-front-info") %>
+        <li class="specs-title">Used Stuff</li>
+        <li><span class="glyphicon glyphicon-fire"></span> Devise for Manage Squirrels</li>
+        <li><span class="glyphicon glyphicon-fire"></span> Bootstrap</li>
+        <li><span class="glyphicon glyphicon-fire"></span> Rails4 for use Notify's</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="squirrel-specs">
+        <%= image_tag("working.png", :alt => "Squirrel Header", class: "img-rounded squirrel-front-info") %>
+        <li class="specs-title">Work in Progress</li>
+        <li><span class="glyphicon glyphicon-remove"></span> Style in all the Pages</li>
+        <li><span class="glyphicon glyphicon-remove"></span> Load Log-in and Sign-up on Click</li>
+        <li><span class="glyphicon glyphicon-remove"></span> Squirrel profile Picture</li>
+        <li><span class="glyphicon glyphicon-remove"></span> A Squirrel can Add others</li>
+        <li><span class="glyphicon glyphicon-remove"></span> The Squirrel can accept or deny it</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="clear"></div>
