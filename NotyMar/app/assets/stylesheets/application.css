@@ -12,4 +12,113 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap
  */
+html{
+  height: 100%;
+}
+
+ body{
+   background-color: rgb(210, 210, 210);
+ }
+
+ .web{
+   background-color: white;
+   width: 1060px;
+   min-height: 960px;
+   border-left: 1px solid rgb(182, 182, 182);
+   border-right: 1px solid rgb(182, 182, 182);
+ }
+
+ .navigation{
+   height: 50px;
+   background-color: rgb(156, 31, 31);
+   border-bottom: 1px solid rgb(119, 23, 23);
+ }
+
+ul.squirrel-bar li{
+  list-style: none;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(156, 31, 31);
+  text-align: center;
+  font-size: 110%;
+  color: white;
+  text-transform: capitalize;
+  padding-top: 15px;
+}
+
+.links:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.links:visited {
+    color: #ffffff;
+}
+
+.links:hover {
+    color: #ffffff;
+}
+
+.links:active {
+    color: #ffffff;
+}
+
+
+.squirrel-bar-right{
+  float: right !important;
+  padding-right: 40px;
+}
+
+.header{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.header h1{
+  text-transform: capitalize;
+  font-size: 80px;
+}
+
+.body-tutorial{
+  margin-top: 30px;
+}
+
+ul.squirrel-specs li{
+  list-style: none;
+}
+
+.specs-title{
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.divider{
+  position: absolute;
+  float: left;
+  height: 200px;
+  width: 1058px;
+}
+
+.main-head{
+  position: relative;
+}
+
+.test{
+  font-style: italic;
+}
+
+.squirrel-front-info{
+  width: 130px;
+  height: 130px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.clear{
+  clear: both;
+}
