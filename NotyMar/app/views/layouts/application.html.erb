@@ -8,7 +8,27 @@
 </head>
 <body>
 
-<%= yield %>
+  <div class="navigation">
+    <div class="container">
+      <ul class="squirrel-bar">
+        <li><a href="/" class="links">Home</a></li>
+        <li><a href="/squirrels" class="links">Squirrels</a></li>
+        <li><a href="/about" class="links">About This</a></li>
+        <div class="squirrel-bar-right">
+          <% if squirrel_signed_in? %>
+            <li><%= link_to "View Squirrel", current_squirrel, class: "links" %></li>
+            <li><%= link_to('Logout', destroy_squirrel_session_path, :method => :delete, class: "links") %></li>
+          <% else %>
+            <li><%= link_to('Login', new_squirrel_session_path, class: "links login")  %></li>
+          <% end %>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container web">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
