@@ -134,21 +134,58 @@ ul.squirrel-specs li{
   margin-bottom: 10px;
 }
 
-.forest-overlay {
-  background-color: rgb(174, 43, 2)
+.squirrel-head{
+  text-transform: uppercase;
 }
 
-.sign,
-.forest-overlay {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .5s, visibility .5;
+.move{
+  padding-left: 100px;
 }
 
-.sign.active,
-.forest-overlay.active {
-  visibility: visible;
-  opacity: 1;
+.list-head{
+  text-align: center;
+}
+
+.lis{
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.list-head{
+  margin-left: 40px;
+}
+
+.squirrel-model{
+  width: 200px;
+  height: 200px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-image: url('place-holder.png');
+  background-size: 200px 220px;
+  border: 1px solid rgb(102, 100, 103);
+  display: inline-block;
+  color: white;
+}
+
+.squirrel-data{
+  width: 199px;
+  height: 40px;
+  margin-top: 138px;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+}
+
+.squirrel-add{
+  width: 199px;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  text-align: center;
+}
+
+.squirrel-info{
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 .clear{

@@ -1,4 +1,14 @@
-<% @squirrel.each do |squirrel| %>
-  <%= link_to squirrel.squirrel_name, squirrel %>:
-  <%= squirrel.email %>
-<% end %>
+<h2 class="list-head">List of Squirrels</h2>
+  <div class="move">
+  <% @squirrel.each do |squirrel| %>
+    <div class="squirrel-model">
+      <div class="squirrel-add">
+        <a><%= link_to squirrel.squirrel_name, squirrel, class: "links squirrel-head" %></a>
+      </div>
+      <div class="squirrel-data">
+        <li class="lis">Add Squirrel</li>
+        <li class="lis"><%= squirrel.email %></li>
+      </div>
+    </div>
+    <% end %>
+</div>

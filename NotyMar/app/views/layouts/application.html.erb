@@ -19,7 +19,7 @@
             <li><%= link_to "View Squirrel", current_squirrel, class: "links" %></li>
             <li><%= link_to('Logout', destroy_squirrel_session_path, :method => :delete, class: "links") %></li>
           <% else %>
-            <li><%= link_to('Login', new_squirrel_session_path, class: "links login")  %></li>
+            <li><%= link_to('Login', new_squirrel_session_path, class: "links")  %></li>
           <% end %>
         </div>
       </ul>
@@ -27,6 +27,15 @@
   </div>
 
   <div class="container web">
+    <div class="row">
+      <%= image_tag("head.png", :alt => "Squirrel Header", class: "divider") %>
+      <div class="header col-md-12">
+        <div class="main-head">
+          <h1>Notymar for Squirrels</h1>
+          <p class="test">"Welcome to the Next Gen Squirrels"</p>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </div>
 
