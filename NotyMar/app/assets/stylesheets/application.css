@@ -40,8 +40,22 @@ ul.squirrel-bar li{
   list-style: none;
   display: inline-block;
   width: 120px;
-  height: 40px;
+  height: 50px;
   background-color: rgb(156, 31, 31);
+  text-align: center;
+  font-size: 110%;
+  color: white;
+  text-transform: capitalize;
+  padding-top: 15px;
+  transition: background-color 0.5s;
+}
+
+ul.squirrel-bar li:hover{
+  list-style: none;
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  background-color: rgb(103, 13, 13);
   text-align: center;
   font-size: 110%;
   color: white;
@@ -85,6 +99,7 @@ ul.squirrel-bar li{
 }
 
 .body-tutorial{
+  margin-left: 10px;
   margin-top: 30px;
 }
 
@@ -117,6 +132,60 @@ ul.squirrel-specs li{
   height: 130px;
   margin-left: 15px;
   margin-bottom: 10px;
+}
+
+.squirrel-head{
+  text-transform: uppercase;
+}
+
+.move{
+  padding-left: 100px;
+}
+
+.list-head{
+  text-align: center;
+}
+
+.lis{
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.list-head{
+  margin-left: 40px;
+}
+
+.squirrel-model{
+  width: 200px;
+  height: 200px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-image: url('place-holder.png');
+  background-size: 200px 220px;
+  border: 1px solid rgb(102, 100, 103);
+  display: inline-block;
+  color: white;
+}
+
+.squirrel-data{
+  width: 199px;
+  height: 40px;
+  margin-top: 138px;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+}
+
+.squirrel-add{
+  width: 199px;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  text-align: center;
+}
+
+.squirrel-info{
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 .clear{
