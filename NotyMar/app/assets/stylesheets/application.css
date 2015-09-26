@@ -40,8 +40,22 @@ ul.squirrel-bar li{
   list-style: none;
   display: inline-block;
   width: 120px;
-  height: 40px;
+  height: 50px;
   background-color: rgb(156, 31, 31);
+  text-align: center;
+  font-size: 110%;
+  color: white;
+  text-transform: capitalize;
+  padding-top: 15px;
+  transition: background-color 0.5s;
+}
+
+ul.squirrel-bar li:hover{
+  list-style: none;
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  background-color: rgb(103, 13, 13);
   text-align: center;
   font-size: 110%;
   color: white;
@@ -85,6 +99,7 @@ ul.squirrel-bar li{
 }
 
 .body-tutorial{
+  margin-left: 10px;
   margin-top: 30px;
 }
 
@@ -117,6 +132,23 @@ ul.squirrel-specs li{
   height: 130px;
   margin-left: 15px;
   margin-bottom: 10px;
+}
+
+.forest-overlay {
+  background-color: rgb(174, 43, 2)
+}
+
+.sign,
+.forest-overlay {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s, visibility .5;
+}
+
+.sign.active,
+.forest-overlay.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .clear{
