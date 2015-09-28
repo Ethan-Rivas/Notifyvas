@@ -6,7 +6,7 @@
         <a><%= link_to squirrel.squirrel_name, squirrel, class: "links squirrel-head" %></a>
       </div>
       <div class="squirrel-data">
-        <li class="lis">Add Squirrel</li>
+        <li class="lis"><%= link_to "Follow Squirrel", friendships_path(:friend_id => squirrel), :method => :post %></li>
         <li class="lis"><%= squirrel.email %></li>
       </div>
     </div>

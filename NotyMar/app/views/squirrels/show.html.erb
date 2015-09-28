@@ -1,4 +1,33 @@
-<%= @squirrel.squirrel_name %>:
-<%= @squirrel.email %>
+<%= image_tag("head.png", :alt => "Squirrel Header", class: "bg-head") %>
 
-<%= link_to "Find more Squirrels", squirrels_path %>
+<div class="follow-box">
+  <div class="main-head">
+
+    <div class="pop">
+      <%= image_tag("working.png", :alt => "Squirrel Header", class: "img-circle squirrel-front-info") %>
+    </div>
+
+    <div class="col-md-6 follow">
+      <div>
+        <h3 class="follow-head">Following</h3>
+        <a class="counter"><%= @squirrel.friendships.count() %></a>
+      </div>
+    </div>
+
+    <div class="col-md-6 follow">
+      <div>
+      <h3 class="follow-head">Followers</h3>
+        <a class="counter"><%= @squirrel.back_friends.count() %></a>
+      </div>
+    </div>
+
+    <div class="info-profile">
+      <h2><%= @squirrel.squirrel_name %></h2>
+      <p class="description-profile">"Something Here"</p>
+      <p class="email-s"><%= @squirrel.email %></p>
+    </div>
+
+
+  </div>
+
+</div>
