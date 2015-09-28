@@ -16,6 +16,8 @@
  */
 html{
   height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
  body{
@@ -114,8 +116,14 @@ ul.squirrel-specs li{
 
 .divider{
   position: absolute;
-  float: left;
   height: 200px;
+  width: 1058px;
+}
+
+.bg-head{
+  position: absolute;
+  padding-right: 28px;
+  height: 180px;
   width: 1058px;
 }
 
@@ -142,10 +150,6 @@ ul.squirrel-specs li{
   padding-left: 100px;
 }
 
-.list-head{
-  text-align: center;
-}
-
 .lis{
   text-align: center;
   text-decoration: none;
@@ -154,7 +158,13 @@ ul.squirrel-specs li{
 
 .list-head{
   margin-left: 40px;
+  text-align: center;
 }
+
+.follow-head{
+  text-align: center;
+}
+
 
 .squirrel-model{
   width: 200px;
@@ -190,4 +200,75 @@ ul.squirrel-specs li{
 
 .clear{
   clear: both;
+}
+
+.email{
+  text-align: center;
+  font-style: italic;
+  color: rgb(189, 189, 189);
+  font-size: 120%;
+  padding-left: 40px;
+}
+
+.follow{
+  display: inline-block;
+  float: right;
+  background-color: rgb(244, 244, 244);
+  border-radius: 10%;
+  width: 130px;
+  height: 130px;
+  margin-right: 20px;
+  margin-bottom: 200px;
+  opacity: 0.9;
+}
+
+.follow-box{
+  margin-top: 30px;
+}
+
+.pop{
+  float: left;
+  display: inline-block;
+}
+
+.icon{
+  text-decoration: none;
+  color: black;
+}
+
+.description-profile{
+  font-style: italic;
+  color: rgb(175, 175, 175);
+  font-size: 120%;
+  font-weight: 600;
+}
+
+.counter{
+  font-size: 250%;
+  cursor: pointer;
+  margin-left: 42px;
+  color: rgb(120, 120, 120);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.counter:hover{
+  font-size: 250%;
+  cursor: pointer;
+  margin-left: 42px;
+  color: rgb(71, 202, 215);
+  text-decoration: none;
+}
+
+.info-profile{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.info-profile h2{
+  color: white;
+}
+
+.email-s{
+  color: white;
 }
