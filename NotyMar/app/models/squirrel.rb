@@ -1,4 +1,7 @@
 class Squirrel < ActiveRecord::Base
+  has_attached_file :picture, default_url: "specs.png"
+  validates_attachment_content_type :picture, content_type: /\Aimage\/.*\Z/
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
