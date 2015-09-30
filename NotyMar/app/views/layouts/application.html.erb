@@ -16,7 +16,7 @@
         <li><a href="/about" class="links">About This</a></li>
         <div class="squirrel-bar-right">
           <% if squirrel_signed_in? %>
-            <li><%= link_to @squirrel.squirrel_name, current_squirrel, class: "links" %></li>
+            <li><%= link_to current_squirrel.squirrel_name, current_squirrel, class: "links" %></li>
             <li><%= link_to "Edit", "/squirrels/edit", class: "links" %></li>
             <li><%= link_to('Logout', destroy_squirrel_session_path, :method => :delete, class: "links") %></li>
           <% else %>
